@@ -20,7 +20,7 @@
   int offset = 0;
   uint index = 0;
   BOOL shouldStop = false;
-  
+    
   NSArray *matches = [anExpression matchesInString:transformedString options:options range:range];
   // Repalce each match
   for (NSTextCheckingResult *match in matches) {

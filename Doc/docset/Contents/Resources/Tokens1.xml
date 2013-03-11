@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/AFHTTPClient+URITemplate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/AFHTTPClient(URITemplate)</TokenIdentifier>
+			<Abstract type="html">The AFNetworking-URITemplate category provides methods for the AFHTTPClient class that support URI template expansion of relevant methods.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:</TokenIdentifier>
+			<Abstract type="html">Create a NSMutableURLRequest using template expansion from a NSDictionary.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestWithMethod:(NSString *)method path:(NSString *)path HTTPHeaders:(NSDictionary *)HTTPHeaders HTTPBody:(NSDictionary *)HTTPBody URIVariablesDict:(NSDictionary *)URIVariables</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The metod type, e.g. GET, POST, PUT etc</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to be expanded, e.g. @&quot;/api/rnr/product/{productId}/rating/{rating}</Abstract>
+				</Parameter><Parameter>
+					<Name>HTTPHeaders</Name>
+					<Abstract type="html">The headers will be merged with any default headers set in the http client. Will override any existing default value.</Abstract>
+				</Parameter><Parameter>
+					<Name>HTTPBody</Name>
+					<Abstract type="html">The body to send in the request. Some methods does not use the body, e.g. GET</Abstract>
+				</Parameter><Parameter>
+					<Name>URIVariables</Name>
+					<Abstract type="html">Template URI variables will used as keys to get the replacement variable from this dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A mutable url request that be be used by the http client to make requests.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:</TokenIdentifier>
+			<Abstract type="html">Create a NSMutableURLRequest using template expansion from a variable argument list (variadic).</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (NSMutableURLRequest *)requestWithMethod:(NSString *)method path:(NSString *)path HTTPHeaders:(NSDictionary *)HTTPHeaders HTTPBody:(NSDictionary *)HTTPBody URIVariables:(NSString *)URIVariable, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>method</Name>
+					<Abstract type="html">The metod type, e.g. GET, POST, PUT etc</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to be expanded, e.g. @&quot;/api/rnr/product/{productId}/rating/{rating}</Abstract>
+				</Parameter><Parameter>
+					<Name>HTTPHeaders</Name>
+					<Abstract type="html">The headers will be merged with any default headers set in the http client. Will override any existing default value.</Abstract>
+				</Parameter><Parameter>
+					<Name>HTTPBody</Name>
+					<Abstract type="html">The body to send in the request. Some methods does not use the body, e.g. GET</Abstract>
+				</Parameter><Parameter>
+					<Name>URIVariable</Name>
+					<Abstract type="html">Variable arguments list that will replace the URI variables. Must be nil terminated.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A mutable url request that be be used by the http client to make requests.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/getPath:success:failure:URIVariablesDict:</TokenIdentifier>
+			<Abstract type="html">Create GET request using dictionary variable expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)getPath:(NSString *)path success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariablesDict:(NSDictionary *)URIVariables</Declaration>
+			
+			
+			<Anchor>//api/name/getPath:success:failure:URIVariablesDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/getPath:success:failure:URIVariables:</TokenIdentifier>
+			<Abstract type="html">Create GET request using variable argument list expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)getPath:(NSString *)path success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariables:(NSString *)URIVariable, ...</Declaration>
+			
+			
+			<Anchor>//api/name/getPath:success:failure:URIVariables:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/postPath:HTTPBody:success:failure:URIVariablesDict:</TokenIdentifier>
+			<Abstract type="html">Create POST request using dictionary variable expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)postPath:(NSString *)path HTTPBody:(NSDictionary *)HTTPbody success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariablesDict:(NSDictionary *)URIVariables</Declaration>
+			
+			
+			<Anchor>//api/name/postPath:HTTPBody:success:failure:URIVariablesDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/postPath:HTTPBody:success:failure:URIVariables:</TokenIdentifier>
+			<Abstract type="html">Create POST request using variable argument list expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)postPath:(NSString *)path HTTPBody:(NSDictionary *)HTTPbody success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariables:(NSString *)URIVariable, ...</Declaration>
+			
+			
+			<Anchor>//api/name/postPath:HTTPBody:success:failure:URIVariables:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/putPath:HTTPBody:success:failure:URIVariablesDict:</TokenIdentifier>
+			<Abstract type="html">Create PUT request using dictionary variable expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)putPath:(NSString *)path HTTPBody:(NSDictionary *)HTTPbody success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariablesDict:(NSDictionary *)URIVariables</Declaration>
+			
+			
+			<Anchor>//api/name/putPath:HTTPBody:success:failure:URIVariablesDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/putPath:HTTPBody:success:failure:URIVariables:</TokenIdentifier>
+			<Abstract type="html">Create PUT request using variable argument list expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)putPath:(NSString *)path HTTPBody:(NSDictionary *)HTTPbody success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariables:(NSString *)URIVariable, ...</Declaration>
+			
+			
+			<Anchor>//api/name/putPath:HTTPBody:success:failure:URIVariables:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/deletePath:success:failure:URIVariablesDict:</TokenIdentifier>
+			<Abstract type="html">Create DELETE request using dictionary variable expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)deletePath:(NSString *)path success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariablesDict:(NSDictionary *)URIVariables</Declaration>
+			
+			
+			<Anchor>//api/name/deletePath:success:failure:URIVariablesDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/deletePath:success:failure:URIVariables:</TokenIdentifier>
+			<Abstract type="html">Create DELETE request using variable argument list expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)deletePath:(NSString *)path success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariables:(NSString *)URIVariable, ...</Declaration>
+			
+			
+			<Anchor>//api/name/deletePath:success:failure:URIVariables:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/patchPath:HTTPBody:success:failure:URIVariablesDict:</TokenIdentifier>
+			<Abstract type="html">Create PATCH request using dictionary variable expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)patchPath:(NSString *)path HTTPBody:(NSDictionary *)HTTPbody success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariablesDict:(NSDictionary *)URIVariables</Declaration>
+			
+			
+			<Anchor>//api/name/patchPath:HTTPBody:success:failure:URIVariablesDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/patchPath:HTTPBody:success:failure:URIVariables:</TokenIdentifier>
+			<Abstract type="html">Create PATCH request using variable argument list expansion and add it to the operation queue.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (void)patchPath:(NSString *)path HTTPBody:(NSDictionary *)HTTPbody success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure URIVariables:(NSString *)URIVariable, ...</Declaration>
+			
+			
+			<Anchor>//api/name/patchPath:HTTPBody:success:failure:URIVariables:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/expandPath:withURIVariableDict:</TokenIdentifier>
+			<Abstract type="html">Expand a path or string using dictionary variable expansion.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)expandPath:(NSString *)path withURIVariableDict:(NSDictionary *)URIVariables</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to expand.</Abstract>
+				</Parameter><Parameter>
+					<Name>URIVariables</Name>
+					<Abstract type="html">Template URI variables will used as keys to get the replacement variable from this dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Expanded path.</Abstract></ReturnValue>
+			<Anchor>//api/name/expandPath:withURIVariableDict:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFHTTPClient(URITemplate)/expandPath:withURIVariables:</TokenIdentifier>
+			<Abstract type="html">Expand a path or string using variable argument list expansion.</Abstract>
+			<DeclaredIn>AFHTTPClient+URITemplate.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)expandPath:(NSString *)path withURIVariables:(NSString *)URIVariable, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>path</Name>
+					<Abstract type="html">The path to expand.</Abstract>
+				</Parameter><Parameter>
+					<Name>URIVariable</Name>
+					<Abstract type="html">Variable arguments list that will replace the URI variables. Must be nil terminated.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Expanded path.</Abstract></ReturnValue>
+			<Anchor>//api/name/expandPath:withURIVariables:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

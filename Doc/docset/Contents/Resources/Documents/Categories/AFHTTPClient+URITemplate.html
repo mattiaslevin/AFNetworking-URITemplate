@@ -1,0 +1,1125 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AFHTTPClient(URITemplate) Category Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 789)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">URITemplate </a></h1>
+				<a id="developerHome" href="../index.html">Wadpam</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AFHTTPClient(URITemplate) Category Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/deletePath:success:failure:URIVariables:">&nbsp;&nbsp;&nbsp;&nbsp;- deletePath:success:failure:URIVariables:</option>
+	
+	<option value="//api/name/deletePath:success:failure:URIVariablesDict:">&nbsp;&nbsp;&nbsp;&nbsp;- deletePath:success:failure:URIVariablesDict:</option>
+	
+	<option value="//api/name/expandPath:withURIVariableDict:">&nbsp;&nbsp;&nbsp;&nbsp;- expandPath:withURIVariableDict:</option>
+	
+	<option value="//api/name/expandPath:withURIVariables:">&nbsp;&nbsp;&nbsp;&nbsp;- expandPath:withURIVariables:</option>
+	
+	<option value="//api/name/getPath:success:failure:URIVariables:">&nbsp;&nbsp;&nbsp;&nbsp;- getPath:success:failure:URIVariables:</option>
+	
+	<option value="//api/name/getPath:success:failure:URIVariablesDict:">&nbsp;&nbsp;&nbsp;&nbsp;- getPath:success:failure:URIVariablesDict:</option>
+	
+	<option value="//api/name/patchPath:HTTPBody:success:failure:URIVariables:">&nbsp;&nbsp;&nbsp;&nbsp;- patchPath:HTTPBody:success:failure:URIVariables:</option>
+	
+	<option value="//api/name/patchPath:HTTPBody:success:failure:URIVariablesDict:">&nbsp;&nbsp;&nbsp;&nbsp;- patchPath:HTTPBody:success:failure:URIVariablesDict:</option>
+	
+	<option value="//api/name/postPath:HTTPBody:success:failure:URIVariables:">&nbsp;&nbsp;&nbsp;&nbsp;- postPath:HTTPBody:success:failure:URIVariables:</option>
+	
+	<option value="//api/name/postPath:HTTPBody:success:failure:URIVariablesDict:">&nbsp;&nbsp;&nbsp;&nbsp;- postPath:HTTPBody:success:failure:URIVariablesDict:</option>
+	
+	<option value="//api/name/putPath:HTTPBody:success:failure:URIVariables:">&nbsp;&nbsp;&nbsp;&nbsp;- putPath:HTTPBody:success:failure:URIVariables:</option>
+	
+	<option value="//api/name/putPath:HTTPBody:success:failure:URIVariablesDict:">&nbsp;&nbsp;&nbsp;&nbsp;- putPath:HTTPBody:success:failure:URIVariablesDict:</option>
+	
+	<option value="//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:">&nbsp;&nbsp;&nbsp;&nbsp;- requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:</option>
+	
+	<option value="//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:">&nbsp;&nbsp;&nbsp;&nbsp;- requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Request Objects">Creating Request Objects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Making HTTP Requests">Making HTTP Requests</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deletePath:success:failure:URIVariables:">deletePath:success:failure:URIVariables:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deletePath:success:failure:URIVariablesDict:">deletePath:success:failure:URIVariablesDict:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expandPath:withURIVariableDict:">expandPath:withURIVariableDict:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/expandPath:withURIVariables:">expandPath:withURIVariables:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPath:success:failure:URIVariables:">getPath:success:failure:URIVariables:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getPath:success:failure:URIVariablesDict:">getPath:success:failure:URIVariablesDict:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/patchPath:HTTPBody:success:failure:URIVariables:">patchPath:HTTPBody:success:failure:URIVariables:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/patchPath:HTTPBody:success:failure:URIVariablesDict:">patchPath:HTTPBody:success:failure:URIVariablesDict:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postPath:HTTPBody:success:failure:URIVariables:">postPath:HTTPBody:success:failure:URIVariables:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/postPath:HTTPBody:success:failure:URIVariablesDict:">postPath:HTTPBody:success:failure:URIVariablesDict:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putPath:HTTPBody:success:failure:URIVariables:">putPath:HTTPBody:success:failure:URIVariables:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/putPath:HTTPBody:success:failure:URIVariablesDict:">putPath:HTTPBody:success:failure:URIVariablesDict:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:">requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:">requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AFHTTPClient(URITemplate) Category Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AFHTTPClient(URITemplate) Category Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AFHTTPClient+URITemplate.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The AFNetworking-URITemplate category provides methods for the AFHTTPClient class that support URI template expansion of relevant methods.</p>
+
+<p>Two types of template expansions are supported:</p>
+
+<ul>
+<li>Using a NSDictonary &ndash; using the name of the URI variable to find a replacement string in the dictionary</li>
+<li>Variable argument list (variadic) &ndash; replace the URI variables with the variables provided in the argument list in the same order as they appear. The list must be nil terminated</li>
+</ul>
+
+
+<p>Both methods provide the same level of functionality. Which one to is best to use depends on the context and developer preference.</p>
+
+<h2>Examples</h2>
+
+<pre><code> // Create request using variable argument list
+ NSMutableURLRequest *request = [self requestWithMethod:@"GET"
+                                                   path:@"user/{user}/albumid/{albumId}"
+                                            HTTPHeaders:nil
+                                               HTTPBody:nil
+                                           URIVariables:user, albumId, nil];
+ // Create request using dictionary
+ NSDictonary *replacements = @{
+                                @"user" : @"MyName",
+                                @"albumId" : @"12345"
+                              };
+ NSMutableURLRequest *request = [self requestWithMethod:@"GET"
+                                                   path:@"user/{user}/albumid/{albumId}"
+                                            HTTPHeaders:nil
+                                               HTTPBody:nil
+                                           URIVariables:replacements];
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating Request Objects" name="task_Creating Request Objects"></a>
+						<h3 class="subsubtitle task-title">Creating Request Objects</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:">&ndash;&nbsp;requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:</a></code>
+		<span class="tooltip"><p>Create a <code>NSMutableURLRequest</code> using template expansion from a <code>NSDictionary</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:">&ndash;&nbsp;requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:</a></code>
+		<span class="tooltip"><p>Create a <code>NSMutableURLRequest</code> using template expansion from a variable argument list (variadic).</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Making HTTP Requests" name="task_Making HTTP Requests"></a>
+						<h3 class="subsubtitle task-title">Making HTTP Requests</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPath:success:failure:URIVariablesDict:">&ndash;&nbsp;getPath:success:failure:URIVariablesDict:</a></code>
+		<span class="tooltip"><p>Create <code>GET</code> request using dictionary variable expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getPath:success:failure:URIVariables:">&ndash;&nbsp;getPath:success:failure:URIVariables:</a></code>
+		<span class="tooltip"><p>Create <code>GET</code> request using variable argument list expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postPath:HTTPBody:success:failure:URIVariablesDict:">&ndash;&nbsp;postPath:HTTPBody:success:failure:URIVariablesDict:</a></code>
+		<span class="tooltip"><p>Create <code>POST</code> request using dictionary variable expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/postPath:HTTPBody:success:failure:URIVariables:">&ndash;&nbsp;postPath:HTTPBody:success:failure:URIVariables:</a></code>
+		<span class="tooltip"><p>Create <code>POST</code> request using variable argument list expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putPath:HTTPBody:success:failure:URIVariablesDict:">&ndash;&nbsp;putPath:HTTPBody:success:failure:URIVariablesDict:</a></code>
+		<span class="tooltip"><p>Create <code>PUT</code> request using dictionary variable expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/putPath:HTTPBody:success:failure:URIVariables:">&ndash;&nbsp;putPath:HTTPBody:success:failure:URIVariables:</a></code>
+		<span class="tooltip"><p>Create <code>PUT</code> request using variable argument list expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deletePath:success:failure:URIVariablesDict:">&ndash;&nbsp;deletePath:success:failure:URIVariablesDict:</a></code>
+		<span class="tooltip"><p>Create <code>DELETE</code> request using dictionary variable expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deletePath:success:failure:URIVariables:">&ndash;&nbsp;deletePath:success:failure:URIVariables:</a></code>
+		<span class="tooltip"><p>Create <code>DELETE</code> request using variable argument list expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/patchPath:HTTPBody:success:failure:URIVariablesDict:">&ndash;&nbsp;patchPath:HTTPBody:success:failure:URIVariablesDict:</a></code>
+		<span class="tooltip"><p>Create <code>PATCH</code> request using dictionary variable expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/patchPath:HTTPBody:success:failure:URIVariables:">&ndash;&nbsp;patchPath:HTTPBody:success:failure:URIVariables:</a></code>
+		<span class="tooltip"><p>Create <code>PATCH</code> request using variable argument list expansion and add it to the operation queue.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expandPath:withURIVariableDict:">&ndash;&nbsp;expandPath:withURIVariableDict:</a></code>
+		<span class="tooltip"><p>Expand a path or string using dictionary variable expansion.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/expandPath:withURIVariables:">&ndash;&nbsp;expandPath:withURIVariables:</a></code>
+		<span class="tooltip"><p>Expand a path or string using variable argument list expansion.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/deletePath:success:failure:URIVariables:" title="deletePath:success:failure:URIVariables:"></a>
+	<h3 class="subsubtitle method-title">deletePath:success:failure:URIVariables:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>DELETE</code> request using variable argument list expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deletePath:(NSString *)<em>path</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariables:(NSString *)<em>URIVariable</em>, <em>...</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deletePath:success:failure:URIVariablesDict:" title="deletePath:success:failure:URIVariablesDict:"></a>
+	<h3 class="subsubtitle method-title">deletePath:success:failure:URIVariablesDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>DELETE</code> request using dictionary variable expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)deletePath:(NSString *)<em>path</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariablesDict:(NSDictionary *)<em>URIVariables</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expandPath:withURIVariableDict:" title="expandPath:withURIVariableDict:"></a>
+	<h3 class="subsubtitle method-title">expandPath:withURIVariableDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Expand a path or string using dictionary variable expansion.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)expandPath:(NSString *)<em>path</em> withURIVariableDict:(NSDictionary *)<em>URIVariables</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path to expand.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URIVariables</em></dt>
+			<dd><p>Template URI variables will used as keys to get the replacement variable from this dictionary.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Expanded path.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/expandPath:withURIVariables:" title="expandPath:withURIVariables:"></a>
+	<h3 class="subsubtitle method-title">expandPath:withURIVariables:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Expand a path or string using variable argument list expansion.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)expandPath:(NSString *)<em>path</em> withURIVariables:(NSString *)<em>URIVariable</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path to expand.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URIVariable</em></dt>
+			<dd><p>Variable arguments list that will replace the URI variables. Must be nil terminated.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Expanded path.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPath:success:failure:URIVariables:" title="getPath:success:failure:URIVariables:"></a>
+	<h3 class="subsubtitle method-title">getPath:success:failure:URIVariables:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>GET</code> request using variable argument list expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getPath:(NSString *)<em>path</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariables:(NSString *)<em>URIVariable</em>, <em>...</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getPath:success:failure:URIVariablesDict:" title="getPath:success:failure:URIVariablesDict:"></a>
+	<h3 class="subsubtitle method-title">getPath:success:failure:URIVariablesDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>GET</code> request using dictionary variable expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)getPath:(NSString *)<em>path</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariablesDict:(NSDictionary *)<em>URIVariables</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/patchPath:HTTPBody:success:failure:URIVariables:" title="patchPath:HTTPBody:success:failure:URIVariables:"></a>
+	<h3 class="subsubtitle method-title">patchPath:HTTPBody:success:failure:URIVariables:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>PATCH</code> request using variable argument list expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)patchPath:(NSString *)<em>path</em> HTTPBody:(NSDictionary *)<em>HTTPbody</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariables:(NSString *)<em>URIVariable</em>, <em>...</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/patchPath:HTTPBody:success:failure:URIVariablesDict:" title="patchPath:HTTPBody:success:failure:URIVariablesDict:"></a>
+	<h3 class="subsubtitle method-title">patchPath:HTTPBody:success:failure:URIVariablesDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>PATCH</code> request using dictionary variable expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)patchPath:(NSString *)<em>path</em> HTTPBody:(NSDictionary *)<em>HTTPbody</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariablesDict:(NSDictionary *)<em>URIVariables</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postPath:HTTPBody:success:failure:URIVariables:" title="postPath:HTTPBody:success:failure:URIVariables:"></a>
+	<h3 class="subsubtitle method-title">postPath:HTTPBody:success:failure:URIVariables:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>POST</code> request using variable argument list expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postPath:(NSString *)<em>path</em> HTTPBody:(NSDictionary *)<em>HTTPbody</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariables:(NSString *)<em>URIVariable</em>, <em>...</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/postPath:HTTPBody:success:failure:URIVariablesDict:" title="postPath:HTTPBody:success:failure:URIVariablesDict:"></a>
+	<h3 class="subsubtitle method-title">postPath:HTTPBody:success:failure:URIVariablesDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>POST</code> request using dictionary variable expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)postPath:(NSString *)<em>path</em> HTTPBody:(NSDictionary *)<em>HTTPbody</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariablesDict:(NSDictionary *)<em>URIVariables</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putPath:HTTPBody:success:failure:URIVariables:" title="putPath:HTTPBody:success:failure:URIVariables:"></a>
+	<h3 class="subsubtitle method-title">putPath:HTTPBody:success:failure:URIVariables:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>PUT</code> request using variable argument list expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)putPath:(NSString *)<em>path</em> HTTPBody:(NSDictionary *)<em>HTTPbody</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariables:(NSString *)<em>URIVariable</em>, <em>...</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/putPath:HTTPBody:success:failure:URIVariablesDict:" title="putPath:HTTPBody:success:failure:URIVariablesDict:"></a>
+	<h3 class="subsubtitle method-title">putPath:HTTPBody:success:failure:URIVariablesDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create <code>PUT</code> request using dictionary variable expansion and add it to the operation queue.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)putPath:(NSString *)<em>path</em> HTTPBody:(NSDictionary *)<em>HTTPbody</em> success:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))<em>success</em> failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))<em>failure</em> URIVariablesDict:(NSDictionary *)<em>URIVariables</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See AFHTTPClient for additional details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:" title="requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:"></a>
+	<h3 class="subsubtitle method-title">requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariables:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a <code>NSMutableURLRequest</code> using template expansion from a variable argument list (variadic).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestWithMethod:(NSString *)<em>method</em> path:(NSString *)<em>path</em> HTTPHeaders:(NSDictionary *)<em>HTTPHeaders</em> HTTPBody:(NSDictionary *)<em>HTTPBody</em> URIVariables:(NSString *)<em>URIVariable</em>, <em>...</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>The metod type, e.g. GET, POST, PUT etc</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path to be expanded, e.g. @&ldquo;/api/rnr/product/{productId}/rating/{rating}</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>HTTPHeaders</em></dt>
+			<dd><p>The headers will be merged with any default headers set in the http client. Will override any existing default value.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>HTTPBody</em></dt>
+			<dd><p>The body to send in the request. Some methods does not use the body, e.g. GET</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URIVariable</em></dt>
+			<dd><p>Variable arguments list that will replace the URI variables. Must be nil terminated.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A mutable url request that be be used by the http client to make requests.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The URI variable will be replaced by the provided arguments in the variable argument list in the same order as they appear.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:" title="requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:"></a>
+	<h3 class="subsubtitle method-title">requestWithMethod:path:HTTPHeaders:HTTPBody:URIVariablesDict:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a <code>NSMutableURLRequest</code> using template expansion from a <code>NSDictionary</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSMutableURLRequest *)requestWithMethod:(NSString *)<em>method</em> path:(NSString *)<em>path</em> HTTPHeaders:(NSDictionary *)<em>HTTPHeaders</em> HTTPBody:(NSDictionary *)<em>HTTPBody</em> URIVariablesDict:(NSDictionary *)<em>URIVariables</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>method</em></dt>
+			<dd><p>The metod type, e.g. GET, POST, PUT etc</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The path to be expanded, e.g. @&ldquo;/api/rnr/product/{productId}/rating/{rating}</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>HTTPHeaders</em></dt>
+			<dd><p>The headers will be merged with any default headers set in the http client. Will override any existing default value.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>HTTPBody</em></dt>
+			<dd><p>The body to send in the request. Some methods does not use the body, e.g. GET</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>URIVariables</em></dt>
+			<dd><p>Template URI variables will used as keys to get the replacement variable from this dictionary.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A mutable url request that be be used by the http client to make requests.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The name of the URI variable will be used as key to look up the replacement value in the provided dictionary. If the key is not found in the dictionary the variable will not be expanded.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFHTTPClient+URITemplate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Wadpam. All rights reserved. (Last updated: 2013-03-11)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

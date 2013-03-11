@@ -10,7 +10,6 @@
 
 @interface AFHTTPClient (URITemplate)
 
-
 // Create URL request
 - (NSMutableURLRequest*)requestWithMethod:(NSString*)method
                                      path:(NSString*)path
@@ -87,8 +86,8 @@ URIVariablesDict:(NSDictionary*)URIVariables;
 
 
 // Expand a path using URI template variables
-+ (NSString*)expandPath:(NSString*)path withURIVariableDict:(NSDictionary*)URIVariables;
-+ (NSString*)expandPath:(NSString*)path withURIVariables:(NSString*)URIVariable, ...;
-+ (NSString*)expandPath:(NSString*)path withURIVariablesArray:(NSArray*)URIVariables;
+- (NSString*)expandPath:(NSString*)path withURIVariableDict:(NSDictionary*)URIVariables;
+- (NSString*)expandPath:(NSString*)path withURIVariables:(NSString*)URIVariable, ...;
+- (NSString*)expandPath:(NSString*)path withURIVariablesArray:(NSArray*)URIVariables;
 
 @end

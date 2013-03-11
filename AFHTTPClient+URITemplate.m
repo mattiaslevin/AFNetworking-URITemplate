@@ -48,7 +48,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
                          URIVariablesDict:(NSDictionary*)URIVariables {
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariableDict:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
 
   return [self requestWithMethod:method expandedPath:expandedPath HTTPHeaders:HTTPHeaders HTTPBody:HTTPBody];
@@ -73,7 +73,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
   va_end(args);
 
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariablesArray:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariablesArray:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
       
   return [self requestWithMethod:method expandedPath:expandedPath HTTPHeaders:HTTPHeaders HTTPBody:HTTPBody];
@@ -116,7 +116,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
    URIVariablesDict:(NSDictionary*)URIVariables {
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariableDict:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self getPath:expandedPath parameters:nil success:success failure:failure];  
@@ -140,7 +140,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
   va_end(args);
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariablesArray:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariablesArray:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self getPath:expandedPath parameters:nil success:success failure:failure];  
@@ -157,7 +157,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
    URIVariablesDict:(NSDictionary*)URIVariables {
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariableDict:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self postPath:expandedPath parameters:HTTPbody success:success failure:failure];
@@ -182,7 +182,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
   va_end(args);
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariablesArray:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariablesArray:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self postPath:expandedPath parameters:HTTPbody success:success failure:failure];
@@ -199,7 +199,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
    URIVariablesDict:(NSDictionary*)URIVariables {
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariableDict:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self putPath:expandedPath parameters:HTTPbody success:success failure:failure];
@@ -224,7 +224,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
   va_end(args);
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariablesArray:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariablesArray:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self putPath:expandedPath parameters:HTTPbody success:success failure:failure];
@@ -240,7 +240,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
   URIVariablesDict:(NSDictionary*)URIVariables {
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariableDict:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self deletePath:expandedPath parameters:nil success:success failure:failure];
@@ -264,7 +264,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
   va_end(args);
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariablesArray:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariablesArray:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self deletePath:expandedPath parameters:nil success:success failure:failure];
@@ -281,7 +281,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
  URIVariablesDict:(NSDictionary*)URIVariables {
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariableDict:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self patchPath:expandedPath parameters:HTTPbody success:success failure:failure];
@@ -306,7 +306,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
   va_end(args);
   
   // Expand uri variables
-  NSString *expandedPath = [[self class] expandPath:path withURIVariablesArray:URIVariables];
+  NSString *expandedPath = [self expandPath:path withURIVariablesArray:URIVariables];
   NSLog(@"Expanded path:%@", expandedPath);
   
   return [self patchPath:expandedPath parameters:HTTPbody success:success failure:failure];
@@ -316,7 +316,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
 #pragma mark - Expand path
 
 // Expand a path using a dictonary of replacement variables
-+ (NSString*)expandPath:(NSString*)path withURIVariableDict:(NSDictionary*)URIVariables {
+- (NSString*)expandPath:(NSString*)path withURIVariableDict:(NSDictionary*)URIVariables {
     
   NSError *error = NULL;
   // Match all {...} in the path
@@ -338,12 +338,15 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
            // Get the replacement string from the dictonary
            NSString *replacement = [URIVariables valueForKey:[stringToReplace substringWithRange:NSMakeRange(1, stringToReplace.length - 2)]];
            if (nil == replacement) {
+             
+             // TODO How to handle filed expland?
+             
              NSLog(@"Warning, variable:%@ not found in dictonary, will expand to empty string", stringToReplace);
              return @"";
            }
            
-           // TODO hardcoded string format
-           return AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(replacement, NSUTF8StringEncoding);
+           // URL encode the replacement string
+           return AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(replacement, self.stringEncoding);
          }];
 
   //NSLog(@"Path:%@ Dict:%@ Expanded:%@", path, URIVariables, expandedPath);
@@ -352,7 +355,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
 
 
 // Expand a path using variable arguments
-+ (NSString*)expandPath:(NSString*)path withURIVariables:(NSString*)URIVariable, ... {
+- (NSString*)expandPath:(NSString*)path withURIVariables:(NSString*)URIVariable, ... {
   
   // Collect var args
   NSMutableArray *replacements = [NSMutableArray array];
@@ -369,7 +372,7 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
 
 
 // Expand a path using array
-+ (NSString*)expandPath:(NSString*)path withURIVariablesArray:(NSArray*)URIVariables {
+- (NSString*)expandPath:(NSString*)path withURIVariablesArray:(NSArray*)URIVariables {
   
   NSError *error = NULL;
   // Match all {...} in the path
@@ -390,13 +393,16 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
            // Get the replacement string from collected var ags
            
            if (index >= [URIVariables count]) {
+             
+            // TODO How to handle filed expland?
+             
              NSLog(@"Warning, variable:%@ not found in var args, will expand to empty string", stringToReplace);
              return @"";
            }
            
-           // TODO hardcoded string format
+           // URL encode the replacement string
            return  AFPercentEscapedQueryStringPairMemberFromStringWithEncoding([URIVariables objectAtIndex:index],
-                                                                               NSUTF8StringEncoding);
+                                                                               self.stringEncoding);
          }];
   
   //NSLog(@"Path:%@ Var args:%@ Expanded:%@", path, replacements, expandedPath);

@@ -154,7 +154,7 @@
     @"variable2" : @"expanded2"
   };
   
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/{variable1}/path/{variable2}" withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}" withURIVariableDict:URIVariables];
   STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/expanded2"], @"Path expand with dict failed");
 }
 
@@ -165,7 +165,7 @@
     @"variable1" : @"expanded1",
   };
   
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/{variable1}/path/{variable2}" withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}" withURIVariableDict:URIVariables];
   STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/"], @"Path expand with dict failed");
 }
 
@@ -177,7 +177,7 @@
   @"variable2" : @"expanded2"
   };
   
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/variable1/path/variable2" withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/variable1/path/variable2" withURIVariableDict:URIVariables];
   STAssertTrue([expandedPath isEqualToString:@"/path/variable1/path/variable2"], @"Path expand with dict failed");
 }
 
@@ -186,7 +186,7 @@
   
   NSDictionary *URIVariables = nil;
   
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/{variable1}/path/{variable2}" withURIVariableDict:URIVariables];
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}" withURIVariableDict:URIVariables];
   STAssertTrue([expandedPath isEqualToString:@"/path//path/"], @"Path expand with dict failed");
 }
 
@@ -196,7 +196,7 @@
 // Expand path using variable arguments
 - (void)testBasicPathExpandWithVarArgs {
     
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
                                    withURIVariables:@"expanded1", @"expanded2", nil];
   STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/expanded2"], @"Path expand with var args failed");
 }
@@ -205,7 +205,7 @@
 // Expand path using variable arguments, out of bounds
 - (void)testOutOfBoundsPathExpandWithVarArgs {
   
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
                                    withURIVariables:@"expanded1", nil];
   STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/"], @"Path expand with var args failed");
 }
@@ -213,7 +213,7 @@
 // Expand path using variable arguments, no match
 - (void)testNoMatchPathExpandWithVarArgs {
   
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/variable1/path/variable2"
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/variable1/path/variable2"
                                    withURIVariables:@"expanded1", @"expanded2", nil];
   STAssertTrue([expandedPath isEqualToString:@"/path/variable1/path/variable2"], @"Path expand with var args failed");
 }
@@ -221,7 +221,7 @@
 // Expand path using variable arguments, extra arguments
 - (void)testExtraPathExpandWithVarArgs {
   
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
                                    withURIVariables:@"expanded1", @"expanded2", @"expanded3", @"expanded4", nil];
   STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/expanded2"], @"Path expand with var args failed");
 }
@@ -229,7 +229,7 @@
 // Expand path using variable arguments, no arguments
 - (void)testNilPathExpandWithVarArgs {
   
-  NSString *expandedPath = [AFHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
+  NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
                                    withURIVariables:nil];
   STAssertTrue([expandedPath isEqualToString:@"/path//path/"], @"Path expand with var args failed");
 }

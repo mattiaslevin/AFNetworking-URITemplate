@@ -26,9 +26,35 @@ Both methods provide the same level of functionality. Which one to is best to us
 
 
 ##Example
-The code below show how to use make a POST using `AFHTTPClient` and URI variable explansion.
+The code below show how to use make a GET using `AFHTTPClient` and URI variable explansion.
 
-    Add example...
+	@implementation PicasaWebAblumsHTTPClient
+
+	// Get all photos for a specific user and photo album
+	- (void)getPhotosForUser:(NSString*)user album:(NSString*)albumId
+    	 withCompletionBlock:(void (^)(NSArray *photos))completionBlock
+        	       failBlock:(void (^)(NSError *error))failBlock {
+  
+  		// Create the request
+ 	 	NSMutableURLRequest *request = [self requestWithMethod:@"GET"
+     						  							  path:@"user/{user}/albumid/{albumId}"
+												   HTTPHeaders:nil
+						 						      HTTPBody:nil
+     						  				      URIVariables:user, albumId, nil];
+  
+  		// Create the operation
+  		AFXMLRequestOperation *operation = [PicasaWebAlbumRequestOperation XMLParserRequestOperationWithRequest:request
+      			success:^(NSURLRequest *request, NSHTTPURLResponse *response, NSXMLParser *XMLParser) {                
+        			...
+      			}
+      			failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, NSXMLParser *XMLParse) {
+        			...
+			    }];
+  
+  		// Que operation
+  		[self enqueueHTTPRequestOperation:operation];  
+	}
+	
 
 
 ##API

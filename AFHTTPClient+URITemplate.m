@@ -339,12 +339,9 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
                                     
            // Get the replacement string from the dictonary
            NSString *replacement = [URIVariables valueForKey:[stringToReplace substringWithRange:NSMakeRange(1, stringToReplace.length - 2)]];
-           if (nil == replacement) {
-             
-             // TODO How to handle filed expland?
-             
-             NSLog(@"Warning, variable:%@ not found in dictonary, will expand to empty string", stringToReplace);
-             return @"";
+           if (nil == replacement) {                          
+             NSLog(@"Warning, variable:%@ not found in dictonary, will not expand", stringToReplace);
+             return stringToReplace;
            }
            
            // URL encode the replacement string
@@ -392,14 +389,10 @@ static NSString * AFPercentEscapedQueryStringPairMemberFromStringWithEncoding(NS
                          options:0
                            range:NSMakeRange(0, [path length])
          withTransformationBlock:^NSString *(NSString *stringToReplace, NSUInteger index, BOOL *stop) {
-           // Get the replacement string from collected var ags
-           
-           if (index >= [URIVariables count]) {
-             
-            // TODO How to handle filed expland?
-             
-             NSLog(@"Warning, variable:%@ not found in var args, will expand to empty string", stringToReplace);
-             return @"";
+           // Get the replacement string from collected var args
+           if (index >= [URIVariables count]) {                        
+             NSLog(@"Warning, variable:%@ not found in var args, will not expand", stringToReplace);
+             return stringToReplace;
            }
            
            // URL encode the replacement string

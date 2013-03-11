@@ -702,6 +702,7 @@
 				CD9BE61716EE11C9005C5CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

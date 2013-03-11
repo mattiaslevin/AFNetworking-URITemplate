@@ -166,7 +166,7 @@
   };
   
   NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}" withURIVariableDict:URIVariables];
-  STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/"], @"Path expand with dict failed");
+  STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/{variable2}"], @"Path expand with dict failed");
 }
 
 // Expand path using dict, no match
@@ -187,7 +187,7 @@
   NSDictionary *URIVariables = nil;
   
   NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}" withURIVariableDict:URIVariables];
-  STAssertTrue([expandedPath isEqualToString:@"/path//path/"], @"Path expand with dict failed");
+  STAssertTrue([expandedPath isEqualToString:@"/path/{variable1}/path/{variable2}"], @"Path expand with dict failed");
 }
 
 
@@ -207,7 +207,7 @@
   
   NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
                                    withURIVariables:@"expanded1", nil];
-  STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/"], @"Path expand with var args failed");
+  STAssertTrue([expandedPath isEqualToString:@"/path/expanded1/path/{variable2}"], @"Path expand with var args failed");
 }
 
 // Expand path using variable arguments, no match
@@ -231,7 +231,7 @@
   
   NSString *expandedPath = [self.testHTTPClient expandPath:@"/path/{variable1}/path/{variable2}"
                                    withURIVariables:nil];
-  STAssertTrue([expandedPath isEqualToString:@"/path//path/"], @"Path expand with var args failed");
+  STAssertTrue([expandedPath isEqualToString:@"/path/{variable1}/path/{variable2}"], @"Path expand with var args failed");
 }
 
 

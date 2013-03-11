@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		CD9BE61416EE11C9005C5CBE /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CD9BE61516EE11C9005C5CBE /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				CD9BE61816EE11D6005C5CBE /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Docu;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		CD9BE53A16EC28D0005C5CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9BE53916EC28D0005C5CBE /* Foundation.framework */; };
 		CD9BE54916EC28D0005C5CBE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD9BE54816EC28D0005C5CBE /* SenTestingKit.framework */; };
@@ -415,6 +429,7 @@
 			targets = (
 				CD9BE53516EC28D0005C5CBE /* URITemplates */,
 				CD9BE54616EC28D0005C5CBE /* URITemplatesTests */,
+				CD9BE61416EE11C9005C5CBE /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -460,6 +475,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		CD9BE61816EE11D6005C5CBE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc --project-name URITemplate --project-company \"Wadpam\" --company-id com.wadpam --output $SOURCE_ROOT/Doc --no-repeat-first-par --explicit-crossref --no-install-docset --keep-intermediate-files --exit-threshold 2 $SOURCE_ROOT/AFHTTPClient+URITemplate.h $SOURCE_ROOT/NSString+RegexpReplace.h";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -623,6 +651,20 @@
 			};
 			name = Release;
 		};
+		CD9BE61616EE11C9005C5CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD9BE61716EE11C9005C5CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -652,6 +694,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CD9BE61516EE11C9005C5CBE /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9BE61616EE11C9005C5CBE /* Debug */,
+				CD9BE61716EE11C9005C5CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

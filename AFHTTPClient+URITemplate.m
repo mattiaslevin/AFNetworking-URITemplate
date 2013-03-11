@@ -21,6 +21,8 @@
                               HTTPHeaders:(NSDictionary*)HTTPHeaders
                                  HTTPBody:(NSDictionary*)HTTPBody;
 
+- (NSString*)expandPath:(NSString*)path withURIVariablesArray:(NSArray*)URIVariables;
+
 @end
 
 

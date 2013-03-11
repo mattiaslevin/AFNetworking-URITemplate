@@ -58,7 +58,7 @@ The code below show how to make a GET request using `AFHTTPClient` and URI varia
 
 
 ##API
-An excerpt of the API is provided below. For a full description, check the header file or generated API documentation.
+An excerpt of the API is provided below. For a full description, check the header file or [generated API documentation](http://mattiaslevin.github.com/AFNetworking-URITemplate/Doc/html/index.html).
 
     @interface AFHTTPClient (URITemplate)
 
@@ -91,14 +91,7 @@ An excerpt of the API is provided below. For a full description, check the heade
         	    failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
        	   URIVariables:(NSString*)URIVariable, ...;
 	
-	// POST
-	…
-	// PUT
-	…
-	// DELETE
-	…
-	// PATCH
-	…
+	...
 	
 	@end
 

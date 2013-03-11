@@ -4,29 +4,29 @@ AFNetworking-URITemplate
 AFNetworking category for building paths using URI templates and variable expansion.
 
 ##Why?
-If you hade to write unreadable string concatinations to build complex urls, paths and query parameter strings before you know why.
+If you have written long and unreadable string concatinations to build complex urls, paths and query parameter strings before, you know why.
 
 Instead of building paths and urls using `NSString` methods:
 
-    NSString *path = [NSString stringWithFormat:@"/api/%@/product/@%/rate/%@", domain, productId, rating];
+    [NSString stringWithFormat:@"/api/%@/product/@%/rate/%@?inner=%@", domain, productId, rating, inner];
     
 You can now use URI template epansion that are easy to read and understand:
    
-    NSString *path = [httpClient expandPath:@"/api/{domain}/product/{product}/rate/{rating}", domain, productId, rating];
+    [httpClient expandPath:@"/api/{domain}/product/{product}/rate/{rating}?inner={inner}", domain, productId, rating, inner];
     
 ##How does it work?
-The `AFNetworking-URITemplate` category provides overloaded methods for the `AFHTTPClient` class that support URI template expansion of all relevant methods.
+The `AFNetworking-URITemplate` category provides methods for the `AFHTTPClient` class that support URI template expansion of relevant methods.
 
-Two types of URI template expansions are supported:
+Two types of template expansions are supported:
 
 * Using a `NSDictonary` - using the name of the URI variable to find a replacement string in the dictonary
-* Variable argument list (variadic) - replace the URI variables with the variables provided in the argument list in the same order as they appear
+* Variable argument list (variadic) - replace the URI variables with the variables provided in the argument list in the same order as they appear. **The list must be nil terminated**
 
 Both methods provide the same level of functionality. Which one to is best to use dependends on the context and developer preference.
 
 
 ##Example
-The code below show how to use make a GET using `AFHTTPClient` and URI variable explansion.
+The code below show how to make a GET request using `AFHTTPClient` and URI variable explansion.
 
 	@implementation PicasaWebAblumsHTTPClient
 
